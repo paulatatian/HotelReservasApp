@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_rooms">
+
+    <fragment
+        android:id="@+id/navigation_rooms"
+        android:name="com.tunombre.hotelreservas.ui.rooms.RoomsFragment"
+        android:label="Habitaciones"
+        tools:layout="@layout/fragment_rooms" />
+
+    <fragment
+        android:id="@+id/navigation_reservations"
+        android:name="com.tunombre.hotelreservas.ui.reservations.ReservationsFragment"
+        android:label="Mis Reservas"
+        tools:layout="@layout/fragment_reservations" />
+
+</navigation>
